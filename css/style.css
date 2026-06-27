@@ -1994,3 +1994,35 @@ ol {
 ```
 
 }
+
+.book-download {
+text-align: center;
+margin: 20px 0 25px;
+}
+
+.book-download .site-btn {
+display: inline-block;
+padding: 14px 30px;
+font-size: 16px;
+}
+
+@media (max-width: 767px) {
+.book-download {
+padding: 0 20px;
+}
+
+```
+.book-download .site-btn {
+	display: block;
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+.book-viewer {
+	display: none;
+}
+```
+
+}
+
