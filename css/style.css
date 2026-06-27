@@ -1916,3 +1916,81 @@ ol {
 .footer-section .widget-item:nth-child(1) ul {
 	padding-left: 0;
 }
+
+/* Mobile footer fix */
+@media (max-width: 767px) {
+
+```
+.footer-section.spad {
+	padding-top: 55px !important;
+}
+
+.footer-section .footer-warp {
+	padding-left: 25px !important;
+	padding-right: 25px !important;
+}
+
+.footer-section .row {
+	display: block !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.footer-section .widget-item {
+	float: none !important;
+	display: block !important;
+	width: 100% !important;
+	max-width: none !important;
+	margin: 0 0 35px 0 !important;
+	padding: 0 !important;
+}
+
+.footer-section .widget-item h3 {
+	font-size: 28px !important;
+	line-height: 1.2 !important;
+	margin-bottom: 15px !important;
+}
+
+.footer-section .widget-item ul {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.footer-section .widget-item li {
+	font-size: 16px !important;
+	line-height: 1.65 !important;
+	margin-bottom: 7px !important;
+}
+
+/* Keep social-media icons in one neat row */
+.footer-section .footer-social {
+	display: flex !important;
+	flex-wrap: wrap !important;
+	gap: 12px !important;
+	align-items: center !important;
+}
+
+.footer-section .footer-social a {
+	float: none !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 44px !important;
+	height: 44px !important;
+	line-height: 44px !important;
+	margin: 0 !important;
+	border-radius: 50% !important;
+}
+
+.footer-section .footer-bottom {
+	text-align: center !important;
+}
+
+.footer-section .footer-bottom p {
+	font-size: 14px !important;
+	line-height: 1.5 !important;
+	padding: 18px 0 !important;
+}
+```
+
+}
