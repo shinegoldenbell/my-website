@@ -2025,39 +2025,4 @@ padding: 0 20px;
 ```
 
 }
-/* Desktop: show PDF viewer, hide download button */
-.book-download {
-display: none !important;
-}
-
-.book-viewer {
-display: block !important;
-width: 100%;
-border: none;
-}
-
-/* Mobile: show button, hide PDF viewer */
-@media (max-width: 767px) {
-.book-download {
-display: block !important;
-text-align: center;
-margin: 20px 0 25px;
-padding: 0 20px;
-}
-
-```
-.book-download .site-btn {
-	display: block;
-	width: 100%;
-	max-width: 320px;
-	margin: 0 auto;
-}
-
-.book-viewer {
-	display: none !important;
-}
-```
-
-}
-
 
