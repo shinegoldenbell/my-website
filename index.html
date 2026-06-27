@@ -86,6 +86,106 @@
 		.footer-section p {
 			font-weight: 700;
 		}
+
+		/* Mobile view improvements */
+@media (max-width: 767px) {
+body {
+overflow-x: hidden;
+}
+
+```
+.hero-text h2 {
+	font-size: 30px !important;
+	line-height: 1.25;
+	padding: 0 15px;
+}
+
+.section-title {
+	padding: 0 12px;
+}
+
+.section-title h2 {
+	font-size: 28px;
+}
+
+.section-title p {
+	font-size: 15px;
+	line-height: 1.7;
+}
+
+/* Show course circles as readable cards on mobile */
+.circle-row {
+	flex-direction: column;
+	gap: 16px;
+	margin-bottom: 16px;
+}
+
+.circle-item,
+.circle-large {
+	width: calc(100vw - 40px);
+	max-width: 340px;
+	height: auto;
+	min-height: 0;
+	border-radius: 18px;
+}
+
+.circle-content,
+.circle-large .circle-content {
+	padding: 20px 18px;
+	font-size: 14px;
+	line-height: 1.65;
+}
+
+.circle-row.last-row {
+	margin-bottom: 35px;
+}
+
+/* Signup form */
+.signup-warp {
+	padding: 0 15px;
+}
+
+.signup-form input {
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 12px;
+}
+
+.signup-form .site-btn {
+	width: 100%;
+}
+
+/* Footer */
+.footer-warp {
+	padding: 0 20px;
+}
+
+.widget-item {
+	width: 100%;
+	margin-bottom: 30px;
+}
+```
+
+}
+
+@media (max-width: 400px) {
+.hero-text h2 {
+font-size: 25px !important;
+}
+
+```
+.section-title h2 {
+	font-size: 25px;
+}
+
+.circle-content,
+.circle-large .circle-content {
+	font-size: 13px;
+}
+```
+
+}
+
 	</style>
 
 	<!--[if lt IE 9]>
