@@ -1919,12 +1919,11 @@ ol {
 
 /* Mobile footer fix */
 @media (max-width: 767px) {
-
-```
 .footer-section.spad {
-	padding-top: 55px !important;
+padding-top: 55px !important;
 }
 
+```
 .footer-section .footer-warp {
 	padding-left: 25px !important;
 	padding-right: 25px !important;
@@ -1940,34 +1939,22 @@ ol {
 	float: none !important;
 	display: block !important;
 	width: 100% !important;
-	max-width: none !important;
-	margin: 0 0 35px 0 !important;
+	margin: 0 0 35px !important;
 	padding: 0 !important;
+	text-align: left !important;
 }
 
-.footer-section .widget-item h3 {
-	font-size: 28px !important;
-	line-height: 1.2 !important;
-	margin-bottom: 15px !important;
+.footer-section .widget-item:last-child {
+	text-align: center !important;
 }
 
-.footer-section .widget-item ul {
-	padding: 0 !important;
-	margin: 0 !important;
-}
-
-.footer-section .widget-item li {
-	font-size: 16px !important;
-	line-height: 1.65 !important;
-	margin-bottom: 7px !important;
-}
-
-/* Keep social-media icons in one neat row */
 .footer-section .footer-social {
 	display: flex !important;
-	flex-wrap: wrap !important;
-	gap: 12px !important;
+	justify-content: center !important;
 	align-items: center !important;
+	gap: 12px !important;
+	margin: 0 auto !important;
+	width: fit-content !important;
 }
 
 .footer-section .footer-social a {
@@ -1977,52 +1964,38 @@ ol {
 	justify-content: center !important;
 	width: 44px !important;
 	height: 44px !important;
-	line-height: 44px !important;
 	margin: 0 !important;
-	border-radius: 50% !important;
 }
 
-.footer-section .footer-bottom {
+/* Mobile: show button and hide PDF */
+.book-download {
+	display: block !important;
 	text-align: center !important;
-}
-
-.footer-section .footer-bottom p {
-	font-size: 14px !important;
-	line-height: 1.5 !important;
-	padding: 18px 0 !important;
-}
-```
-
-}
-
-.book-download {
-text-align: center;
-margin: 20px 0 25px;
+	margin: 20px 0 25px !important;
+	padding: 0 20px !important;
 }
 
 .book-download .site-btn {
-display: inline-block;
-padding: 14px 30px;
-font-size: 16px;
-}
-
-@media (max-width: 767px) {
-.book-download {
-padding: 0 20px;
-}
-
-```
-.book-download .site-btn {
-	display: block;
-	width: 100%;
-	max-width: 320px;
-	margin: 0 auto;
+	display: block !important;
+	width: 100% !important;
+	max-width: 320px !important;
+	margin: 0 auto !important;
 }
 
 .book-viewer {
-	display: none;
+	display: none !important;
 }
 ```
 
 }
 
+/* Desktop: hide button and show PDF */
+.book-download {
+display: none !important;
+}
+
+.book-viewer {
+display: block !important;
+width: 100% !important;
+border: none !important;
+}
